@@ -1,0 +1,5 @@
+../Core/Src/CircularBuffer.c:11:9:CircBuff_Init	24	static
+../Core/Src/CircularBuffer.c:31:6:CircBuff_Destroy	16	static
+../Core/Src/CircularBuffer.c:36:6:CircBuff_Write	24	static
+../Core/Src/CircularBuffer.c:46:8:CircBuff_Backward_Read	24	static
+../Core/Src/CircularBuffer.c:60:8:CircBuff_Read	24	static

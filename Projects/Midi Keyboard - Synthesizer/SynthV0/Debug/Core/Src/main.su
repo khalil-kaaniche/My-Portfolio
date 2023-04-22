@@ -1,0 +1,11 @@
+main.c:226:5:main	40	static
+main.c:591:6:SystemClock_Config	88	static
+main.c:631:6:MidiOn	16	static
+main.c:641:6:MidiOff	16	static
+main.c:651:6:OctaveMidi	16	static
+main.c:694:6:midi	8	static
+main.c:883:6:play	16	static
+main.c:1359:6:Octv	16	static
+main.c:1403:6:osc	40	static
+main.c:1462:6:env	40	static
+main.c:1590:6:Error_Handler	4	static

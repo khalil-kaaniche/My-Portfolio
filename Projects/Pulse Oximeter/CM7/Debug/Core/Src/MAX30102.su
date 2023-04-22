@@ -1,0 +1,9 @@
+../Core/Src/MAX30102.c:19:6:MAX30102_Write_Register	24	static
+../Core/Src/MAX30102.c:31:6:MAX30102_Read_Register	24	static
+../Core/Src/MAX30102.c:43:6:MAX30102_Read_N_Register	24	static
+../Core/Src/MAX30102.c:55:6:MAX30102_Bit_Mask_Register	24	static
+../Core/Src/MAX30102.c:63:6:MAX30102_Clear	8	static
+../Core/Src/MAX30102.c:72:6:MAX30102_Reset	8	static
+../Core/Src/MAX30102.c:77:6:MAX30102_EnableSlot	16	static
+../Core/Src/MAX30102.c:104:6:MAX30102_Init	16	static
+../Core/Src/MAX30102.c:143:6:MAX30102_GetValues	24	static
