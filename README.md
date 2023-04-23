@@ -11,7 +11,7 @@ Hello, my name is Khalil Kaaniche and I am an embedded systems student with a pa
 #### **Projects :**
 The folder contains so far 6 projects :
   - Active noise cancellation
-  - Eurobot Contributio
+  - Eurobot Contribution
   - Midi keyboard and Synthesizer
   - Neural network based detection of industrial fan failure
   - Pulse oximeter
