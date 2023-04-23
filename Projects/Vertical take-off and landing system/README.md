@@ -1,7 +1,6 @@
-## [Configuration]{.mark}
+## Configuration
 
-![](./media/image9.png){width="1.3254188538932634in"
-height="1.7691721347331584in"}
+![](./media/image9.png)
 
 *Communication configuration blocks*
 
@@ -23,10 +22,9 @@ proper functioning: in our case we will specify]{.mark}
 
 -   [As well as the size of the UART payload]{.mark}
 
-## [Writing from LabVIEW]{.mark}
+## Writing from LabVIEW
 
-![](./media/image1.png){width="4.7245658355205595in"
-height="3.3127471566054245in"}
+![](./media/image1.png)
 
 *LabVIEW to STM32 write blocks*
 
@@ -52,10 +50,9 @@ to carry out a concatenation before sending it.]{.mark}
 [It is necessary to implement on microcontroller an algorithm of
 decomposition of the sent frame to be able to extract the data.]{.mark}
 
-## [Reading from LabVIEW]{.mark}
+## Reading from LabVIEW
 
-![](./media/image4.png){width="6.267716535433071in"
-height="3.2083333333333335in"}
+![](./media/image4.png)
 
 *Blocks for reading data received from STM32*
 
@@ -79,56 +76,48 @@ obtained curve.]{.mark}
 the phase plane in real time by designating them respectively as X and
 Y.]{.mark}
 
-## [Final result]{.mark} 
+## Final result
 
 ### **Interfaces**
 
-![](./media/image13.png){width="5.14455271216098in"
-height="3.7341983814523183in"}
+![](./media/image13.png)
 
 *Screenshot of the control panel*
 
-²![](./media/image2.png){width="5.12251312335958in"
-height="3.718199912510936in"}
+²![](./media/image2.png)
 
 *PID control tab and angular position curve*
 
-![](./media/image12.png){width="5.64721019247594in"
-height="4.099054024496938in"}
+![](./media/image12.png)
 
 *Filtered and unfiltered speed panel*
 
-![](./media/image8.png){width="5.599646762904637in"
-height="4.0645308398950135in"}
+![](./media/image8.png)
 
 *Acceleration panel*
 
-![](./media/image11.png){width="5.57831583552056in"
-height="4.049046369203849in"}
+![](./media/image11.png)
 
 *Phase plan tab*
 
 ### **[Real time plot]{.mark}**
 
-![](./media/image5.png){width="5.625in" height="3.7604166666666665in"}
+![](./media/image5.png)
 
 *Angular position time plot*
 
-![](./media/image3.png){width="4.175542432195975in"
-height="3.0934667541557306in"}
+![](./media/image3.png)
 
 *Angular velocity curve*
 
-![](./media/image10.png){width="4.286871172353456in"
-height="3.1759448818897638in"}
+![](./media/image10.png)
 
 *Curve of the filtered angular velocity*
 
-![](./media/image6.png){width="5.0in" height="3.6354166666666665in"}
+![](./media/image6.png)
 
 *Angular acceleration*
 
-![](./media/image7.png){width="4.78957895888014in"
-height="3.2017300962379704in"}
+![](./media/image7.png)
 
 *Phase Diagram*
