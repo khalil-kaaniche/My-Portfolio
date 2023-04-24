@@ -1,123 +1,49 @@
 ## Configuration
 
-![](./media/image9.png)
+![image](https://user-images.githubusercontent.com/108965218/234114124-fccff55d-0676-4206-b11d-78cddeb204d6.png)
 
-*Communication configuration blocks*
+For the configuration part, we use the VISA configure Serial Port block, having downloaded the necessary drivers beforehand.
+Then we create the control blocks and/or constants necessary for its proper functioning: in our case we will specify 
+- The Visa Resource Name (to choose the appropriate COM port) 
+- The activation of a termination character to separate the different messages during reception
+- The baud rate which will be identical to the one used by the microcontroller.
+- The existence or not of a parity bit 
+- As well as the size of the UART payload
 
-[For the configuration part, we use the VISA configure Serial Port
-block, having downloaded the necessary drivers beforehand.]{.mark}
-
-[Then we create the control blocks and/or constants necessary for its
-proper functioning: in our case we will specify]{.mark}
-
--   [The Visa Resource Name (to choose the appropriate COM port)]{.mark}
-
--   [The activation of a termination character to separate the different
-    > messages during reception]{.mark}
-
--   [The baud rate which will be identical to the one used by the
-    > microcontroller.]{.mark}
-
--   [The existence or not of a parity bit]{.mark}
-
--   [As well as the size of the UART payload]{.mark}
 
 ## Writing from LabVIEW
 
-![](./media/image1.png)
+![image](https://user-images.githubusercontent.com/108965218/234114163-1942399b-5455-4eb3-b8ea-0cb031398cd1.png)
 
-*LabVIEW to STM32 write blocks*
+In our case, we have several variables to transmit from LabVIEW to the microcontroller used: 
+- A boolean variable indicating the start or stop of the system
+- Real numbers containing the constants Kp, Ki and Kd of our implemented PID.
+- A float containing the instruction for tests.
+Therefore, it is necessary to separate the variables with " \n " to break up the message when receiving. 
+So our frame of data to be sent is a character string containing the variables to be sent separated by a predefined character " \n " where from the necessity to convert the variables into character strings and to carry out a concatenation before sending it.
+It is necessary to implement on microcontroller an algorithm of decomposition of the sent frame to be able to extract the data.
 
-[In our case, we have several variables to transmit from LabVIEW to the
-microcontroller used:]{.mark}
-
--   [A boolean variable indicating the start or stop of the
-    > system]{.mark}
-
--   [Real numbers containing the constants Kp, Ki and Kd of our
-    > implemented PID.]{.mark}
-
--   [A float containing the instruction for tests.]{.mark}
-
-[Therefore, it is necessary to separate the variables with \" \\n \" to
-break up the message when receiving.]{.mark}
-
-[So our frame of data to be sent is a character string containing the
-variables to be sent separated by a predefined character \" \\n \" where
-from the necessity to convert the variables into character strings and
-to carry out a concatenation before sending it.]{.mark}
-
-[It is necessary to implement on microcontroller an algorithm of
-decomposition of the sent frame to be able to extract the data.]{.mark}
 
 ## Reading from LabVIEW
 
-![](./media/image4.png)
+![image](https://user-images.githubusercontent.com/108965218/234114256-a3cf5463-6ac9-472e-8869-f538b166fff6.png)
 
-*Blocks for reading data received from STM32*
+LabVIEW is used in our case to receive the measured angular position on microcontroller.
+To solve communication problems, we have deliberately sent the measured angle with an offset of + 90 degrees to ensure that the number is always positive. 
+This angle is processed in LabVIEW to be corrected and displayed on a graph.
+From the received angles we drift twice to obtain respectively a speed and an angular acceleration.
+We also perform a filtering on the calculated velocity to smooth the obtained curve.
+Moreover, we use the angular position and the angular velocity to plot the phase plane in real time by designating them respectively as X and Y.
 
-[LabVIEW is used in our case to receive the measured angular position on
-microcontroller.]{.mark}
-
-[To solve communication problems, we have deliberately sent the measured
-angle with an offset of + 90 degrees to ensure that the number is always
-positive.]{.mark}
-
-[This angle is processed in LabVIEW to be corrected and displayed on a
-graph.]{.mark}
-
-[From the received angles we drift twice to obtain respectively a speed
-and an angular acceleration.]{.mark}
-
-[We also perform a filtering on the calculated velocity to smooth the
-obtained curve.]{.mark}
-
-[Moreover, we use the angular position and the angular velocity to plot
-the phase plane in real time by designating them respectively as X and
-Y.]{.mark}
 
 ## Final result
 
-### **Interfaces**
+![image](https://user-images.githubusercontent.com/108965218/234114318-0fba38cf-1e1e-42cb-a391-ef5e3237cb90.png)
 
-![](./media/image13.png)
+![image](https://user-images.githubusercontent.com/108965218/234114350-7ed35a45-60a3-4fe6-991a-769443fc2d48.png)
 
-*Screenshot of the control panel*
+![image](https://user-images.githubusercontent.com/108965218/234114382-11c57881-a03b-4018-a8ca-536aba07d94a.png)
 
-²![](./media/image2.png)
+![image](https://user-images.githubusercontent.com/108965218/234114415-4a87dae7-625f-4f6a-b8e8-59ff995dff2f.png)
 
-*PID control tab and angular position curve*
-
-![](./media/image12.png)
-
-*Filtered and unfiltered speed panel*
-
-![](./media/image8.png)
-
-*Acceleration panel*
-
-![](./media/image11.png)
-
-*Phase plan tab*
-
-### **[Real time plot]{.mark}**
-
-![](./media/image5.png)
-
-*Angular position time plot*
-
-![](./media/image3.png)
-
-*Angular velocity curve*
-
-![](./media/image10.png)
-
-*Curve of the filtered angular velocity*
-
-![](./media/image6.png)
-
-*Angular acceleration*
-
-![](./media/image7.png)
-
-*Phase Diagram*
+![image](https://user-images.githubusercontent.com/108965218/234114442-8c04389a-e7e1-43d4-b80a-155b023d43b5.png)
