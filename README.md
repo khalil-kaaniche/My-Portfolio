@@ -6,7 +6,8 @@ Welcome to my portfolio repository! This repository contains examples of my work
 ### *Plan :*
 
 #### **About me :**
-Hello, my name is Khalil Kaaniche and I am an embedded systems student with a passion for Digital Signal Processing and Artificial Intelligence. I am always curious to learn more and to work in a team.
+Hi, My name is Khalil Kaaniche and I am an Embedded Systems Engineer with a strong passion for audio signal processing and AI . During my journey, I learned and practiced the programming languages C , Python and Matlab. I have a solid understanding of ARM architecture and experience with all sort of debugging tools.
+I enjoy working on challenging and innovative projects that allow me to expand my skillset and contribute to the advancement of technology. Overall, I am a dedicated and enthusiastic engineer who is eager to learn and grow within the industry.
 
 #### **Projects :**
 The folder contains so far 6 projects :
@@ -19,5 +20,3 @@ The folder contains so far 6 projects :
   
 #### **Certificates :**
 This folder contains the differents certificates received
-
-
