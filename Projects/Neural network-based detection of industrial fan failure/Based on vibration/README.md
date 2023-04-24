@@ -1,7 +1,9 @@
 ## Presentation 
 
 The work consists in training a sound classification model to detect the state of a fan in an industrial environment. The dataset used can be found through this link:
+
 https://sensiml.com/datadepot/pdm-fan-motor-demo-v1/
+
 This dataset is intended to rapidly build smart sensor data time series classification algorithms to translate raw physical sensor data into application-specific perception events using pattern recognition.  
 These events include blade shock, hub imbalance, and frame shock.  The engine state classification includes these events, as well as vibration detection of engine on and off states.
 All fan-related event classifications are based on the monitoring of vibrations/movements detected by the on-board inertial measurement unit (6-axis accelerometer and gyro sensor). In this way, the dataset simulates a common use case desired in industrial predictive maintenance applications for a global sensor system that can detect equipment utilization, failure states, and performance degradation with minimal or no incursion into existing electromechanical systems used for control and operation.
