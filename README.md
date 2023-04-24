@@ -1,4 +1,4 @@
-# My Portefolio
+# My Portfolio
 ***
 Welcome to my portfolio repository! This repository contains examples of my work in the field of embedded systems development, as well as information about my skills and experience.
 ***
