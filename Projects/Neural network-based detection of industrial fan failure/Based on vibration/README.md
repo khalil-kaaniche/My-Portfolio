@@ -1,6 +1,6 @@
 ## Presentation 
 
-The work consists in training a sound classification model to detect the state of a fan in an industrial environment. The dataset used can be found through this link:
+The work consists in training a classification model to detect the state of a fan in an industrial environment. The dataset used can be found through this link:
 
 https://sensiml.com/datadepot/pdm-fan-motor-demo-v1/
 
